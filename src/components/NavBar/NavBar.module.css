@@ -1,0 +1,175 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+.NavBar {
+	width: 120px;
+	height: 100%;
+	display: block;
+	padding-right: 40px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index:10;
+	/* background: linear-gradient(316deg, rgba(234, 234, 234, 0.02) 0%, rgba(234, 234, 234, 0.02) 16.667%,rgba(128, 128, 128, 0.02) 16.667%, rgba(128, 128, 128, 0.02) 33.334%,rgba(161, 161, 161, 0.02) 33.334%, rgba(161, 161, 161, 0.02) 50.001000000000005%,rgba(154, 154, 154, 0.02) 50.001%, rgba(154, 154, 154, 0.02) 66.668%,rgba(77, 77, 77, 0.02) 66.668%, rgba(77, 77, 77, 0.02) 83.33500000000001%,rgba(10, 10, 10, 0.02) 83.335%, rgba(10, 10, 10, 0.02) 100.002%),linear-gradient(75deg, rgba(39, 39, 39, 0.03) 0%, rgba(39, 39, 39, 0.03) 20%,rgba(232, 232, 232, 0.03) 20%, rgba(232, 232, 232, 0.03) 40%,rgba(33, 33, 33, 0.03) 40%, rgba(33, 33, 33, 0.03) 60%,rgba(84, 84, 84, 0.03) 60%, rgba(84, 84, 84, 0.03) 80%,rgba(112, 112, 112, 0.03) 80%, rgba(112, 112, 112, 0.03) 100%),linear-gradient(103deg, rgba(174, 174, 174, 0.03) 0%, rgba(174, 174, 174, 0.03) 12.5%,rgba(190, 190, 190, 0.03) 12.5%, rgba(190, 190, 190, 0.03) 25%,rgba(191, 191, 191, 0.03) 25%, rgba(191, 191, 191, 0.03) 37.5%,rgba(23, 23, 23, 0.03) 37.5%, rgba(23, 23, 23, 0.03) 50%,rgba(227, 227, 227, 0.03) 50%, rgba(227, 227, 227, 0.03) 62.5%,rgba(71, 71, 71, 0.03) 62.5%, rgba(71, 71, 71, 0.03) 75%,rgba(162, 162, 162, 0.03) 75%, rgba(162, 162, 162, 0.03) 87.5%,rgba(85, 85, 85, 0.03) 87.5%, rgba(85, 85, 85, 0.03) 100%),linear-gradient(355deg, rgba(38, 38, 38, 0.02) 0%, rgba(38, 38, 38, 0.02) 25%,rgba(106, 106, 106, 0.02) 25%, rgba(106, 106, 106, 0.02) 50%,rgba(28, 28, 28, 0.02) 50%, rgba(28, 28, 28, 0.02) 75%,rgba(66, 66, 66, 0.02) 75%, rgba(66, 66, 66, 0.02) 100%),linear-gradient(137deg, rgba(38, 38, 38, 0.03) 0%, rgba(38, 38, 38, 0.03) 25%,rgba(211, 211, 211, 0.03) 25%, rgba(211, 211, 211, 0.03) 50%,rgba(4, 4, 4, 0.03) 50%, rgba(4, 4, 4, 0.03) 75%,rgba(24, 24, 24, 0.03) 75%, rgba(24, 24, 24, 0.03) 100%),linear-gradient(51deg, rgba(253, 253, 253, 0.03) 0%, rgba(253, 253, 253, 0.03) 14.286%,rgba(103, 103, 103, 0.03) 14.286%, rgba(103, 103, 103, 0.03) 28.572%,rgba(46, 46, 46, 0.03) 28.572%, rgba(46, 46, 46, 0.03) 42.858%,rgba(68, 68, 68, 0.03) 42.858%, rgba(68, 68, 68, 0.03) 57.144%,rgba(116, 116, 116, 0.03) 57.144%, rgba(116, 116, 116, 0.03) 71.42999999999999%,rgba(248, 248, 248, 0.03) 71.43%, rgba(248, 248, 248, 0.03) 85.71600000000001%,rgba(174, 174, 174, 0.03) 85.716%, rgba(174, 174, 174, 0.03) 100.002%),linear-gradient(283deg, rgba(20, 20, 20, 0.01) 0%, rgba(20, 20, 20, 0.01) 14.286%,rgba(23, 23, 23, 0.01) 14.286%, rgba(23, 23, 23, 0.01) 28.572%,rgba(19, 19, 19, 0.01) 28.572%, rgba(19, 19, 19, 0.01) 42.858%,rgba(134, 134, 134, 0.01) 42.858%, rgba(134, 134, 134, 0.01) 57.144%,rgba(4, 4, 4, 0.01) 57.144%, rgba(4, 4, 4, 0.01) 71.42999999999999%,rgba(254, 254, 254, 0.01) 71.43%, rgba(254, 254, 254, 0.01) 85.71600000000001%,rgba(87, 87, 87, 0.01) 85.716%, rgba(87, 87, 87, 0.01) 100.002%),linear-gradient(270deg, #ffffff, #ffffff); */
+	background: white;
+	border-radius: 0% 30% 350% 0%;
+	perspective: 800;
+	transition: all 800ms cubic-bezier(0.9, 0, 0.33, 1);
+}
+
+@media(max-width: 320px) {
+  .NavBar {
+    background: transparent;
+  }
+}
+
+
+.Nav__Icon {
+	width: 55px;
+	height: 44px;
+	position: relative;
+	top: 5vh;
+	left: 40%;
+	z-index:1002;
+	/* overflow: hidden; */
+	/* background: hsla(0, 0%, 76%, 0.6); */
+	cursor: pointer;
+	transition: all 800ms cubic-bezier(0.9, 0, 0.33, 1);
+}
+
+.Nav__Icon .TopBar {
+	width: 55px;
+	height: 3px;
+	display: block;
+	background: #fcd703;
+	position: absolute;
+	top: 10px;
+	transform: rotate(0);
+	transition: all 800ms cubic-bezier(0.9, 0, 0.33, 1);
+}
+.Nav__Icon .MiddleBar {
+	width: 45px;
+	height: 3px;
+	display: block;
+	background: #fcd703;
+	position: absolute;
+	top: 20px;
+	transform: rotate(0);
+	transition: all 800ms cubic-bezier(0.9, 0, 0.33, 1);
+}
+.Nav__Icon .BottomBar {
+	width: 40px;
+	height: 3px;
+	display: block;
+	background: #fcd703;
+	position: absolute;
+	top: 30px;
+	transform: rotate(0);
+	transition: all 800ms cubic-bezier(0.9, 0, 0.33, 1);
+}
+
+.NavBar .NavBar__ul {
+	float: right;
+	margin-top: 20vh;
+	opacity: 0;
+	visibility: hidden;
+	transform: rotateY(-90deg) translateX(-300px);
+	transition: all 800ms cubic-bezier(0.9, 0, 0.33, 1);
+}
+.NavBar .NavBar__ul li {
+	margin-left: -90%;
+	list-style: none;
+	/* text-align: right; */
+	transform: rotateY(0) translateX(0);
+}
+.NavBar .NavBar__ul a {
+	display: block;
+	font-size: 2rem;
+	font-weight: 800;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: black;
+	margin-bottom: 15px;
+}
+.NavBar .NavBar__ul a:hover {
+	background: linear-gradient(270deg, #fcd703, #f57e0a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+	/* color: hsl(185, 96%, 33%); */
+}
+.NavBar__open {
+	width: 350px;
+	height: 100%;
+	display: block;
+	background:white;
+	/* background: linear-gradient(316deg, rgba(234, 234, 234, 0.02) 0%, rgba(234, 234, 234, 0.02) 16.667%,rgba(128, 128, 128, 0.02) 16.667%, rgba(128, 128, 128, 0.02) 33.334%,rgba(161, 161, 161, 0.02) 33.334%, rgba(161, 161, 161, 0.02) 50.001000000000005%,rgba(154, 154, 154, 0.02) 50.001%, rgba(154, 154, 154, 0.02) 66.668%,rgba(77, 77, 77, 0.02) 66.668%, rgba(77, 77, 77, 0.02) 83.33500000000001%,rgba(10, 10, 10, 0.02) 83.335%, rgba(10, 10, 10, 0.02) 100.002%),linear-gradient(75deg, rgba(39, 39, 39, 0.03) 0%, rgba(39, 39, 39, 0.03) 20%,rgba(232, 232, 232, 0.03) 20%, rgba(232, 232, 232, 0.03) 40%,rgba(33, 33, 33, 0.03) 40%, rgba(33, 33, 33, 0.03) 60%,rgba(84, 84, 84, 0.03) 60%, rgba(84, 84, 84, 0.03) 80%,rgba(112, 112, 112, 0.03) 80%, rgba(112, 112, 112, 0.03) 100%),linear-gradient(103deg, rgba(174, 174, 174, 0.03) 0%, rgba(174, 174, 174, 0.03) 12.5%,rgba(190, 190, 190, 0.03) 12.5%, rgba(190, 190, 190, 0.03) 25%,rgba(191, 191, 191, 0.03) 25%, rgba(191, 191, 191, 0.03) 37.5%,rgba(23, 23, 23, 0.03) 37.5%, rgba(23, 23, 23, 0.03) 50%,rgba(227, 227, 227, 0.03) 50%, rgba(227, 227, 227, 0.03) 62.5%,rgba(71, 71, 71, 0.03) 62.5%, rgba(71, 71, 71, 0.03) 75%,rgba(162, 162, 162, 0.03) 75%, rgba(162, 162, 162, 0.03) 87.5%,rgba(85, 85, 85, 0.03) 87.5%, rgba(85, 85, 85, 0.03) 100%),linear-gradient(355deg, rgba(38, 38, 38, 0.02) 0%, rgba(38, 38, 38, 0.02) 25%,rgba(106, 106, 106, 0.02) 25%, rgba(106, 106, 106, 0.02) 50%,rgba(28, 28, 28, 0.02) 50%, rgba(28, 28, 28, 0.02) 75%,rgba(66, 66, 66, 0.02) 75%, rgba(66, 66, 66, 0.02) 100%),linear-gradient(137deg, rgba(38, 38, 38, 0.03) 0%, rgba(38, 38, 38, 0.03) 25%,rgba(211, 211, 211, 0.03) 25%, rgba(211, 211, 211, 0.03) 50%,rgba(4, 4, 4, 0.03) 50%, rgba(4, 4, 4, 0.03) 75%,rgba(24, 24, 24, 0.03) 75%, rgba(24, 24, 24, 0.03) 100%),linear-gradient(51deg, rgba(253, 253, 253, 0.03) 0%, rgba(253, 253, 253, 0.03) 14.286%,rgba(103, 103, 103, 0.03) 14.286%, rgba(103, 103, 103, 0.03) 28.572%,rgba(46, 46, 46, 0.03) 28.572%, rgba(46, 46, 46, 0.03) 42.858%,rgba(68, 68, 68, 0.03) 42.858%, rgba(68, 68, 68, 0.03) 57.144%,rgba(116, 116, 116, 0.03) 57.144%, rgba(116, 116, 116, 0.03) 71.42999999999999%,rgba(248, 248, 248, 0.03) 71.43%, rgba(248, 248, 248, 0.03) 85.71600000000001%,rgba(174, 174, 174, 0.03) 85.716%, rgba(174, 174, 174, 0.03) 100.002%),linear-gradient(283deg, rgba(20, 20, 20, 0.01) 0%, rgba(20, 20, 20, 0.01) 14.286%,rgba(23, 23, 23, 0.01) 14.286%, rgba(23, 23, 23, 0.01) 28.572%,rgba(19, 19, 19, 0.01) 28.572%, rgba(19, 19, 19, 0.01) 42.858%,rgba(134, 134, 134, 0.01) 42.858%, rgba(134, 134, 134, 0.01) 57.144%,rgba(4, 4, 4, 0.01) 57.144%, rgba(4, 4, 4, 0.01) 71.42999999999999%,rgba(254, 254, 254, 0.01) 71.43%, rgba(254, 254, 254, 0.01) 85.71600000000001%,rgba(87, 87, 87, 0.01) 85.716%, rgba(87, 87, 87, 0.01) 100.002%),linear-gradient(270deg, #ffffff, #ffffff); */
+	position: fixed;
+	left: 0;
+	z-index:10000;
+	/* filter: blur(8px); */
+	border-radius: 0% 1% 1% 0;
+	transition: all 800ms cubic-bezier(0.9, 0, 0.33, 1);
+}
+.NavBar__open .Nav__Icon {
+	left: 75%;
+}
+.NavBar__open .NavBar__ul {
+	margin-left: -50vw;
+	opacity: 1;
+	margin: 0;
+	visibility: visible;
+	float: right;
+	margin-top: calc(25vh - 20px);
+	transform: rotateY(-90deg) translateX(-300px);
+	transition: all 800ms cubic-bezier(0.9, 0, 0.33, 1);
+}
+
+.NavBar__open .TopBar {
+	top: 21px;
+	transform: rotate(45deg);
+}
+.NavBar__open .MiddleBar {
+	width: 0;
+	top: 22px;
+	opacity: 0;
+	visibility: hidden;
+	transform: translateX(30px);
+}
+.NavBar__open .BottomBar {
+	width: 55px;
+	top: 21px;
+	transform: rotate(-45deg);
+}
+
+.NavBar__open .NavBar__ul a {
+	display: block;
+	font-size: 2rem;
+	font-weight: 800;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: black;
+	margin-bottom: 15px;
+}
+.NavBar__open .NavBar__ul a:hover {
+	/* background: linear-gradient(270deg, #03a1fc, #0a70f5); */
+	background: linear-gradient(270deg, #fcd703, #f57e0a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+	/* color: hsl(185, 96%, 33%); */
+}
+
+.NavBar__open .NavBar__ul {
+	margin-left: -40%;
+	transform: rotateY(0) translateX(0);
+}
+.NavBar__open .NavBar__ul li {
+	margin-left: -90%;
+	list-style: none;
+	/* text-align: right; */
+	transform: rotateY(0) translateX(0);
+}
