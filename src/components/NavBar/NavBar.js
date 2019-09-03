@@ -26,7 +26,12 @@ const NavBar = () => {
 				<br />
 				<br />
 				<li className="resume">
-					<a href="#resume">RESUME</a>
+					<a
+						href="https://s3-ap-southeast-1.amazonaws.com/glints-dashboard/resume/3ecc013b4c00de59de2f6580004cb7c3.pdf"
+						target="_blank"
+					>
+						RESUME
+					</a>
 				</li>{' '}
 				<li></li>
 				{/* <li><Button /></li> */}
